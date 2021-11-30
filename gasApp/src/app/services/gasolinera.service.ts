@@ -12,7 +12,7 @@ export class GasolineraService {
 
 
   getGasolineras() :Observable<any>{
-    return this.http.get<any>('../../assets/gasolineras');
+    return this.http.get<any>('https://sedeaplicaciones.minetur.gob.es/ServiciosRESTCarburantes/PreciosCarburantes/EstacionesTerrestres/');
 
   }
 

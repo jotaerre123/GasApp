@@ -1,16 +1,18 @@
-<mat-card class="movie-card">
+<mat-card class="gasolinera-card">
     <mat-card-content>
-        <div class="movie-image">
+        <div class="gasolinera-image">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7ntrYOCccMrbIXNZyABFj2ahO1USKcaDpdg&usqp=CAU" height="200px" width="100%" />
         </div>
-        <h3 class="movie-title">{{gasolineraInput.rotulo}}</h3>
+        <h3 class="gasolinera-title">{{gasolineraInput.rotulo}}</h3>
         <br>
-        <p class="movie-overview">{{gasolineraInput.provincia}}</p>
+        <p class="gasolinera-overview">{{gasolineraInput.provincia}}</p>
+        <p>Gasóleo A: {{gasolineraInput.precioGasoleoA}} €</p>
+        <p>Gasóleo 95E5: {{gasolineraInput.precioGasolina95E5}} €</p>
+        <p>Gasóleo 95E5: {{gasolineraInput.precioGasolina98E5}} €</p>
+
     </mat-card-content>
     <mat-card-actions align="end">
-        <button mat-icon-button aria-label="Example icon button with a heart icon" (click)= "openGasolineraDialog()">
-            <mat-icon>favorite_border</mat-icon>
-        </button> 
+        <button mat-raised-button color="warn" (click)="openGasolineraDialog()">Ver Más</button>
 
 
     </mat-card-actions>

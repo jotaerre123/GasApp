@@ -1,2 +1,16 @@
-<div class="scroll-container" fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="20px grid" fxFlexFill fxLayoutAlign="start start"><app-gasolinera-item fxFlex="15"  *ngFor="let gasolinera of gasolineraList" [gasolineraInput]="gasolinera"></app-gasolinera-item></div>
 
+<div><mat-form-field appearance="fill">
+    <mat-label>Provincias</mat-label>
+    <mat-select name="provincia" [(ngModel)]="IDProvincia">
+      <mat-option *ngFor="let provincia of Provincias" [value]="provincia.IDPovincia">
+        {{provincia.Provincia}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <button mat-raised-button color="warn" (click)="filtrarGasolineras()">Filtrar</button>
+  <button mat-raised-button color="warn" (click)="quitarFiltro()">Quitar Filtro</button></div> 
+  
+
+<div fxFlexFill fxLayout="row wrap" fxLayoutGap="20px grid" fxFlexAlign="center center">
+    <app-gasolinera-item *ngFor="let gasolinera of gasolineraList" [gasolineraInput]="gasolinera"></app-gasolinera-item>
+    </div>

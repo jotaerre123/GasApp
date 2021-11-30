@@ -8,12 +8,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { GasolinerasListComponent } from './pages/gasolineras-list/gasolineras-list.component';
 import { GasolineraItemComponent } from './components/gasolinera-item/gasolinera-item.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { DialogGasolineraDetailComponent } from './components/dialog-gasolinera-detail/dialog-gasolinera-detail.component';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     GasolinerasListComponent,
-    GasolineraItemComponent
+    GasolineraItemComponent,
+    DialogGasolineraDetailComponent
     
   ],
   imports: [
@@ -21,7 +27,9 @@ import { GasolineraItemComponent } from './components/gasolinera-item/gasolinera
     AppRoutingModule,
     MaterialImportsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    FlexLayoutModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

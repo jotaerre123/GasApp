@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "gasapp-7c95a": {
+      "hosting": {
+        "gasApp": [
+          "gasapp-7c95a"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "gasapp-7c95a"
+  }
+}
